@@ -1,4 +1,7 @@
+package strings;
 public class Atoi {
+
+    //leetcode solution https://leetcode.com/problems/string-to-integer-atoi/
 
     public int solution(String s) {
         if(s == null || s.length() == 0) return 0;
