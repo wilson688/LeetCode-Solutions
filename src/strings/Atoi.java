@@ -20,7 +20,6 @@ public class Atoi {
 
         for(int i = startIndex; i < len; i++ ) {
             //if first chars are words or special chars other than '-' or '+'
-            if(s.charAt(i) == ' ') i++;
             if(s.charAt(i) < '0' || s.charAt(i) > '9') break;
 
             int digit = (int) s.charAt(i) - '0';
