@@ -4,6 +4,7 @@ package strings;
 //leetcode question link https://leetcode.com/problems/longest-common-prefix/solution/
 public class LongestCommonPrefix {
 
+    //longest common Prefix -> starting of the string (prefix)firstUniqChar
 
     public String solution(String[] strs) {
 
