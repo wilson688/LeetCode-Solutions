@@ -2,6 +2,7 @@ package strings;
 
 import java.util.Arrays;
 
+//time complexity -> N*Q -> N length of String and Q is number of replacesments
 class FindandReplaceinString {
     public String findReplaceString(String S, int[] indexes, String[] sources, String[] targets) {
         int N = S.length();
