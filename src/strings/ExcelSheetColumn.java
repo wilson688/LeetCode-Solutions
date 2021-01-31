@@ -14,7 +14,7 @@ public class ExcelSheetColumn {
                 n = n - 26;
                 sb.append(ch);
             } else {
-                ch = (char) ((n % 26) + 64);  // really don't know how this works
+                ch = (char) ((((n - 1)) % 26) + 'A');  // minus sky value of A so that we can get the index of the next char
                 n = n /26;
                 sb.append(ch);
             }

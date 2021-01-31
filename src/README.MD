@@ -81,3 +81,19 @@ while(intervalItr.next()) {
 ### MAP INTO PRIORITY QUEUE
 ````
 PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<Map.Entry<Integer, Integer>>((n1, n2) -> n2.getValue() - n1.getValue());
+````
+
+
+### ADD ROOT NODES BY LEVEL INSIDE ARRAYLIST 
+
+```        
+        if(result.size() == level) {
+            result.add(new ArrayList<Integer>());
+        }
+    
+        result.get(level).add(root.val);
+        if(root.left != null) helper(root.left, level + 1);
+        if(root.right != null) helper(root.right, level + 1);
+        
+        
+```
